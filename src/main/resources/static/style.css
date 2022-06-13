@@ -1,0 +1,46 @@
+body {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+table{
+    
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    margin-top: 50px;
+}
+td, tr, table, select{
+    border: 1px solid rgb(0, 100, 58);
+}
+
+select{
+    color: black;  
+}
+
+#container {
+    
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box; 
+    text-align: center;
+    
+}
+
+#container input::placeholder{
+    color: black;    
+}
+#altType{
+    border: 1px solid black;
+}
+#type{
+    border: 1px solid black;
+}

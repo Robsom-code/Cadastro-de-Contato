@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Contato</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<script src="post.js"></script>
+<script src="mask.js"></script>
+    <form onsubmit="cadastraUsuario()" id="container">
+        
+        
+        <input name="nome" id="nome" type="text" placeholder="Nome" required >*
+        <br><br>
+
+        
+        <input name="sobrenome" id="sobrenome" type="text" placeholder="Sobrenome" required >*
+        <br><br>
+
+        
+        <input name="cpf" 
+        id="cpf" 
+        type="text" 
+        placeholder="CPF" 
+        onkeyup="cpfCheck(this)"
+        onkeydown="javascript: fMasc( this, mCPF );"
+        required maxlength="14">*
+        <br><br>
+
+        
+        <input name="email" id="email" type="text" placeholder="Email" required >*
+        <br><br>
+
+        <select name="type" id="type" for="number" >
+            <option value="MOBILE" id="mobile">Celular</option>
+            <option value="HOME" id="home">Telefone Fixo</option>
+            <option value="COMMERCIAL" id="commercial">Telefone Comercial</option>
+        </select>*
+        
+        <input name="number" id="number" type="text"
+         required 
+         onkeydown="javascript: fMasc( this, mNumber );"
+         maxlength="14"
+         placeholder="Numero">*
+        <br><br>
+
+        <select name="altType" id="altType" for="altNumber" >
+            <option value="NOVALUE" id="noValue">--</option>
+            <option value="MOBILE" id="mobile" required>Celular</option>
+            <option value="HOME" id="home">Telefone Fixo</option>
+            <option value="COMMERCIAL" id="commercial">Telefone Comercial</option>
+        </select>
+        
+        <input name="altNumber"
+         id="altNumber"
+         type="text"
+         placeholder="Numero secundario"
+         onkeydown="javascript: fMasc( this, mNumber );"
+         maxlength="14"> 
+        <br><br>
+      
+        <button type="submit">Enviar</button>
+    </form>    
+
+    
+<table id="tabela" class="table table-bordered"  class="tb" name="table" >
+    
+</table>
+
+<style>
+   
+</style>
+
+
+<script src="main.js">
+</script>
+
+
+</body>
+</html>
