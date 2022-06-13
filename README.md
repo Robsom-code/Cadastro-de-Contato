@@ -1,2 +1,2 @@
 # Cadastro-de-Contato
-Este código REST, possuí um campo de cadastro de contato com os campos: Nome, Sobrenome, CPF(Validado), Telefone e Tipo de telefone. Neste código estou utilizando as tecnologias spring e gradle.
+Este código REST que atualmente está funcionando com banco de dados H2 e de forma relacional, possuí um campo de cadastro de contato com os campos: Nome, Sobrenome, CPF(Necessário ser Válido), Email, Telefone e Tipo de telefone, ao inserir os valores corretamente, será adicionado em uma tabela que permite editar ou apagar os campos. Neste código estou utilizando as tecnologias spring boot e gradle sendo o front-end utilizando apenas javascript.
